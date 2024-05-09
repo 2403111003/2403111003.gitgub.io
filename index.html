@@ -1,116 +1,298 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset = "UTF-8">
-    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-    <title>[ MainHomePage ]</title>
-    <link rel = "stylesheet" href = "myhomepage.css">
+<title>[ In DeX ]</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="index.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbit&display=swap" rel="stylesheet">
+<script src="index.js" ></script>
 </head>
 <body>
 <header>
-    <h1>유민규의 홈페이지</h1>
+    <a href="#home">.In DeX</a>
 </header>
+<div>
+  <a href="#InTroDucTioN">.InTroDucTioN</a>
+  <a href="#TeaM">.TeaM</a>
+  <a href="#ProJecT">.ProJecT</a>
+  <a href="#ScheDuleR">.ScheDuleR</a>
+  <a href="#StudY">.StudY</a>
+</div>
 <nav>
-    <ul>
-        <li><a href="#introduction">INTRODUCTION</a></li> 
-        <li><a href="#study">STUDY</a></li> 
-        <li><a href="#project team">PROJECT TEAM</a></li> 
-    </ul>
+  <div class="nav-container">
+    <a href="#InTroDucTioN">.InTroDucTioN</a>
+    <a href="#TeaM">.TeaM</a>
+    <a href="#ProJecT">.ProJecT</a>
+    <a href="#ScheDuleR">.ScheDuleR</a>
+    <a href="#StudY">.StudY</a>
+  </div>
 </nav>
-<mian>
-<section  id = "introduction" class = "introduction">
-        <img src="img/sky.jpg" width="500" class="img"> 
-        <ul>   
-            <li>한국폴리텍 성남캠퍼스 인공지능소프트웨어과</li>        
-            <li>전화번호 : 010-9327-3666</li>
-            <li>이메일 : ryumg2003@naver.com</li>
-        </ul>
+<section id="home">
+  <div style="padding:48px" class="image-slider">
+    <img src="image1.jpg" alt="Image 1">
+    <img src="image2.jpg" alt="Image 2">
+    <img src="image3.jpg" alt="Image 3">
+  </div> 
+</section>
+<div style="padding:128px 1px" id="InTroDucTioN">
+  <h3>My InTroDucTioN</h3>
+    <img src="images.jpg" width="500" class="img"> 
+    <div style="margin-top:64px">
+    <div> 
+        <p><strong>한국폴리텍 성남캠퍼스 인공지능소프트웨어과</strong></p>
     </div>
-</section>
-<section id = "study">
-        <table border="1">
-            <tr>
-                <th colspan="6">2024.1.1-강의 시간표</th>
-            </tr>
-            <tr>
-                <td id="t1">교시/요일</td>
-                <th id="t1">월</th>
-                <th id="t1">화</th>
-                <th id="t1">수</th>
-                <th id="t1">목</th>
-                <th id="t1">금</th>
-            </tr>
-            <tr>
-                <th id="t1">1</th>
-                <td rowspan="3" id="t2">기초 통계</td>
-                <td id="t3">JAVA</td>
-                <td id="t3">알고리즘</td>
-                <td rowspan="3" id="t4">컴퓨터구조</td>
-                <td id="t3">인터페이스</td>
-            </tr>
-            <tr>
-                <th id="t1">2</th>
-                <td id="t3">JAVA/인페</td>
-                <td id="t3">알고/JAVA</td>
-                <td id="t3">인페/알고</td>
-            </tr>
-            <tr>
-                <th id="t1">3</th>
-                <td id="t3">인터페이스</td>
-                <td id="t3">JAVA</td>
-                <td id="t3">알고리즘</td>
-            </tr>
-            <tr>
-                <th id="t1">4</th>
-                <td colspan="5" id="t5">점심 시간</td>
-            </tr>
-            <tr>
-                <th id="t1">5</th>
-                <td rowspan="2" id="t2">융합프로젝트</td>
-                <td rowspan="3" id="t4">데이터베이스</td>
-                <td rowspan="2" id="t2">발명과 창업</td>
-                <td rowspan="2" id="t4">산업안전관리</td>
-                <td rowspan="3" id="t2">융합프로젝트</td>
-            </tr>
-            <tr>
-                <th id="t1">6</th>
-            </tr>
-            <tr>               
-                <th id="t1">7</th>
-                <td rowspan="3" id="t5">동아리</td>
-                <td rowspan="2" id="t4">영어</td>
-                <td rowspan="3" id="t5">동아리</td>
-            </tr>
-            <tr>               
-                <th id="t1">8</th>
-                <td rowspan="2" id="t5">동아리</td>
-                <td id="t5"></td>
-            </tr>
-            <tr>               
-                <th id="t1">9</th>
-                <td id="t5"></td>
-                <td id="t5"></td>
-            </tr>
-        </table>
-</section>
-</mian>        
+    <div>
+        <p><strong>[ p ][</strong> 010-9327-3666 <strong>]</strong></p>
+    </div>
+    <div>
+      <p><strong>[ @ ][</strong> ryumg2003@naver.com <strong>]</strong></p>
+    </div>
+  </div>
+</div>
+<div style="padding:128px 1px">
+    <h3>[ ProJecT ]</h3>
+        <ul>
+            <li>[ 비트코인 자동매매 시스템 ]</li>
+            <p><a href="#ProJecT">[ 비트코인 자동매매 시스템 진행상황 ]</a></p>
+        </ul> 
+</div>
+<div id="TeaM" style="padding:128px 1px">
+  <h3>[ Team ]</h3>
+  <div style="margin: top 24px">
+    <div>
+        <div>
+          <img src="/TeaM/team1.jpg" alt="우도연" style="width:100%">
+          <div>
+            <h3>[ 우도연 ]</h3>
+            <button> BOJ </button> 
+            <button>GITHUB</button>
+          </div>
+        </div>
+      </div>
+    <div>
+      <div>
+        <img src="/TeaM/team2.jpg" alt="안형욱" style="width:100%">
+        <div>
+          <h3>[ 안형욱 ]</h3>
+          <button> BOJ </button>
+          <button>GITHUB</button>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div>
+        <img src="/TeaM/team3.jpg" alt="김효동" style="width:100%">
+        <div>
+          <h3>[ 김효동 ]</h3>
+          <button> BOJ </button>
+          <button>GITHUB</button>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div>
+        <img src="/TeaM/team4.jpg" alt="이예은" style="width:100%">
+        <div>
+          <h3>[ 이예은 ]</h3>
+          <button> BOJ </button>
+          <button>GITHUB</button>
+        </div>
+      </div>
+    </div>
+    <div>
+        <div>
+          <img src="/TeaM/team4.jpg" alt="박준혁" style="width:100%">
+          <div>
+            <h3>[ 박준혁 ]</h3>
+            <button> BOJ </button>
+            <button>GITHUB</button>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+<div id="ProJecT">
+  <h3>[ 비트코인 자동매매 시스템 ]</h3>
+  <button> 진행 상황 </button>
+</div>
+<div id="ScheDuleR">
+  <div>
+    <h3>[ ScheDuleR ]</h3>
+    <table border="1">
+        <tr>
+            <th colspan="6">2024.1.1-강의 시간표</th>
+        </tr>
+        <tr>
+            <th>교시/요일</th>
+            <th>월</th>
+            <th>화</th>
+            <th>수</th>
+            <th>목</th>
+            <th>금</th>
+        </tr>
+        <tr>
+            <th>1</th>
+            <td rowspan="3">기초 통계</td>
+            <td>JAVA</td>
+            <td>알고리즘</td>
+            <td rowspan="3">컴퓨터구조</td>
+            <td>인터페이스</td>
+        </tr>
+        <tr>
+            <th>2</th>
+            <td>JAVA/인페</td>
+            <td>알고/JAVA</td>
+            <td>인페/알고</td>
+        </tr>
+        <tr>
+            <th>3</th>
+            <td>인터페이스</td>
+            <td>JAVA</td>
+            <td>알고리즘</td>
+        </tr>
+        <tr>
+            <th>4</th>
+            <td colspan="5">점심 시간</td>
+        </tr>
+        <tr>
+            <th>5</th>
+            <td rowspan="2">융합프로젝트</td>
+            <td rowspan="3">데이터베이스</td>
+            <td rowspan="2">발명과 창업</td>
+            <td rowspan="2">산업안전관리</td>
+            <td rowspan="3">융합프로젝트</td>
+        </tr>
+        <tr>
+            <th>6</th>
+        </tr>
+        <tr>               
+            <th>7</th>
+            <td rowspan="3">동아리</td>
+            <td rowspan="2">영어</td>
+            <td rowspan="3">동아리</td>
+        </tr>
+        <tr>               
+            <th>8</th>
+            <td rowspan="2">동아리</td>
+            <td></td>
+        </tr>
+        <tr>               
+            <th>9</th>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+  </div>
+</div>
+<div style="padding:128px 1px" id="StudY">
+  <h3>StudY</h3> 
+  <table border="1">
+    <tr>
+        <th>과목</th>
+        <th>시간</th>
+        <th>과목설명</th>
+    </tr>
+
+    <tr>
+        <th>[ JAVA기초 ]</th>
+        <th>
+            <ul>
+                <li>화 오전 09:00 ~ 10:10</li>
+                <li>수 오전 10:25~11:50</li>
+            </ul>
+        </th>
+        <td>
+            java를 이용해서 프로그래밍 개념 익히기
+        </td>
+    </tr>
+
+    <tr>
+        <th>[ 알고리즘 ]</th>
+        <th>
+            <ul>
+                <li>수 오전 9:00~10:10</li>
+                <li>금 오전 10:25~11:50</li>
+            </ul>
+        </th>
+        <th>
+            컴퓨터의 문제해결 능력을 코딩에 적용하는 연습
+        </th>
+    </tr>
+    <tr>
+        <th>[ 인터페이스 디자인 ]</th>
+        <th>
+            <ul>
+                <li>화 오전 10:25 ~ 11:50</li>
+                <li>금 오전 9:00 ~ 10:10</li>
+            </ul>
+        </th>
+        <th>
+            웹페이지를 만들기 위한 HTML, CSS, JavaScript 학습
+        </th>
+    </tr>
+    <tr>
+        <th>[ 기초통계 ]</th>
+        <th>
+            <ul>
+                <li>월 오전 9:00~11:50</li>
+            </ul>
+        </th>
+        <th>R 프로그래밍을 통한 기본 통계 학습</th>
+    </tr>
+    <tr>
+        <th>[ 발명과 창업 ]</th>
+        <th>
+            <ul>
+                <li>수 오후 12:50~2:40</li>
+            </ul>
+        </th>
+        <th>ICT맨토링과 프로젝트 통한 수업</th>
+    </tr>
+    <tr>
+        <th>[ 데이터베이스 ]</th>
+        <th>
+            <ul>
+                <li>화 오후12:50~3:40</li>
+            </ul>
+        </th>
+        <th>oracle 프로그램을 통해 데이터베이스 학습</th>
+    </tr>
+    <tr>
+        <th>[ 컴퓨터 구조 + 운영체제 ]</th>
+        <th>
+            <ul>
+                <li>목 오전9:00~11:50</li>
+            </ul>
+        </th>
+        <th>컴퓨터 구조의 학습과 운영체제 학습</th>
+    </tr>
+    <tr>
+        <th>[ 산업안전관리 + 정보보안 ]</th>
+        <th>
+            <ul>
+                <li>목 오후12:50~2:40</li>
+            </ul>
+        </th>
+        <th>정보보안에 관련한 전반적인 내용 학습</th>
+    </tr>
+    <tr>
+        <th>[ 영어 ]</th>
+        <th>
+            <ul>
+                <li>수 오후2:50~4:40</li>
+            </ul>
+        </th>
+        <th>영어표현법</th>
+    </tr>
+</table>
+</div>
+  </div>
+</div>
 <footer>
-    <ul id = "projectteam">
-        <li><a>GITHUB</a></li>
-        <li><a  href ="">우도연</a></li>
-        <li><a  href ="">안형욱</a></li>
-        <li><a  href ="">김효동</a></li>
-        <li><a  href ="">이예은</a></li>
-        <li><a  href ="">박준혁</a></li>
-    </ul>
-    <ul id = "projectteam">
-        <li><a>BOJ</a></li>
-        <li><a  href ="">우도연</a></li>
-        <li><a  href ="">안형욱</a></li>
-        <li><a  href ="">김효동</a></li>
-        <li><a  href ="">이예은</a></li>
-        <li><a  href ="">박준혁</a></li>
-    </ul>
+  <a href="#home"></i>To the top</a>
 </footer>
 </body>
 </html>
