@@ -1,24 +1,41 @@
-html{
+html {
     font-family: "Orbit", sans-serif;
     font-weight: 400;
     font-style: normal;
-  }
-  
+}
+
 body {
-    display: grid;
-    grid-template-rows: auto auto 1fr auto;
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
 }
 
 header {
-    grid-row: 1;
     background-color: #333;
     color: white;
     padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.header-image {
+    max-width: 100%;
+    height: auto;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header p {
+    margin: 10px 0;
+    font-size: 16px;
+    opacity: 0.8;
 }
 
 nav {
-    grid-row: 2;
     top: 0;
     width: 100%;
     background-color: #444;
@@ -28,19 +45,34 @@ nav {
     transition: top 0.3s ease;
     z-index: 1000;
 }
+
 .nav-container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr); /* 5개의 칸으로 분할 */
+    display: flex;
+    justify-content: space-around;
     background-color: #444;
     color: white;
     padding: 10px;
 }
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #575757;
+}
+
 .sticky {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
 }
+
 @keyframes fadeInDown {
     from {
         top: -100px;
@@ -49,43 +81,106 @@ nav {
         top: 0;
     }
 }
+
 #home {
-    grid-row: 3;
-    background-color: #f2f2f2;
-    padding: 100px;
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 50px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
 }
+
+#InDeX {
+    display: flex;
+    justify-content: space-around;
+    background-color: #444;
+    padding: 10px;
+}
+
+#InDeX a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#InDeX a:hover {
+    background-color: #575757;
+}
+
+.table-container {
+    overflow-x: auto;
+    margin: 20px;
+    max-width: calc(100% - 40px);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
 #InTroDucTioN {
-    background-color: #fff;
-    padding: 20px;
-    overflow-y: auto;
-    scroll-behavior: smooth; 
+    background-color: #333;
+    color: white;
 }
+
 #ProJecT {
-    background-color: #f9f9f9;
-    padding: 20px;
-    overflow-y: auto;
-    scroll-behavior: smooth; 
-}
-#TeaM {
-    background-color: #eee;
-    padding: 20px;
-    overflow-y: auto;
-    scroll-behavior: smooth; 
-}
-#ScheDuleR {
     background-color: #f5f5f5;
-    padding: 20px;
-    overflow-y: auto;
-    scroll-behavior: smooth; 
+    padding: 50px;
+    text-align: center;
+    border-radius: 20px;
 }
+
+.project-link {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.project-link:hover {
+    background-color: #333;
+    color: white;
+}
+
+#TeaM {
+    background-color: #666;
+    color: white;
+}
+
+#ScheDuleR {
+    background-color: #f0f0f0;
+}
+
 #StudY {
-    background-color: #fcfcfc;
-    padding: 20px;
+    background-color: #777;
+    padding: 0;
     margin: 0;
-    overflow-y: auto;
-    scroll-behavior: smooth; 
 }
+
 footer {
     background-color: #333;
     color: white;

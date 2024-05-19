@@ -8,36 +8,35 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Orbit&display=swap" rel="stylesheet">
-<script src="index.js" ></script>
+<script src="index.js"></script>
 </head>
 <body>
 <header>
-    <a href="#home">.In DeX</a>
+    <a href="#home" class="nav-link">.In DeX</a>
+    <a href="#InTroDucTioN" class="nav-link">.InTroDucTioN</a>
+    <a href="#TeaM" class="nav-link">.TeaM</a>
+    <a href="#ProJecT" class="nav-link">.ProJecT</a>
+    <a href="#ScheDuleR" class="nav-link">.ScheDuleR</a>
+    <a href="#StudY" class="nav-link">.StudY</a>
 </header>
-<div>
-  <a href="#InTroDucTioN">.InTroDucTioN</a>
-  <a href="#TeaM">.TeaM</a>
-  <a href="#ProJecT">.ProJecT</a>
-  <a href="#ScheDuleR">.ScheDuleR</a>
-  <a href="#StudY">.StudY</a>
-</div>
 <nav>
-  <div class="nav-container">
-    <a href="#InTroDucTioN">.InTroDucTioN</a>
-    <a href="#TeaM">.TeaM</a>
-    <a href="#ProJecT">.ProJecT</a>
-    <a href="#ScheDuleR">.ScheDuleR</a>
-    <a href="#StudY">.StudY</a>
+  <div class="nav-container" id="nav-links">
+    <a href="#home"  class="nav-link">.In DeX</a>
+    <a href="#InTroDucTioN" class="nav-link">.InTroDucTioN</a>
+    <a href="#TeaM" class="nav-link">.TeaM</a>
+    <a href="#ProJecT" class="nav-link">.ProJecT</a>
+    <a href="#ScheDuleR" class="nav-link">.ScheDuleR</a>
+    <a href="#StudY" class="nav-link">.StudY</a>
   </div>
 </nav>
 <section id="home">
-  <div style="padding:48px" class="image-slider">
-    <img src="image1.jpg" alt="Image 1">
-    <img src="image2.jpg" alt="Image 2">
-    <img src="image3.jpg" alt="Image 3">
+  <div class="header-image">
+    <img src="image1.jpeg" alt="Image 1">
+    <img src="image2.jpeg" alt="Image 2">
+    <img src="image3.jpeg" alt="Image 3">
   </div> 
 </section>
-<div style="padding:128px 1px" id="InTroDucTioN">
+<div class="center" id="InTroDucTioN">
   <h3>My InTroDucTioN</h3>
     <img src="images.jpg" width="500" class="img"> 
     <div style="margin-top:64px">
@@ -45,21 +44,21 @@
         <p><strong>한국폴리텍 성남캠퍼스 인공지능소프트웨어과</strong></p>
     </div>
     <div>
-        <p><strong>[ p ][</strong> 010-9327-3666 <strong>]</strong></p>
+        <p><strong>[ p ][</strong> 010-9327-**** <strong>]</strong></p>
     </div>
     <div>
       <p><strong>[ @ ][</strong> ryumg2003@naver.com <strong>]</strong></p>
     </div>
   </div>
 </div>
-<div style="padding:128px 1px">
+<div class="center" style="padding:128px 1px">
     <h3>[ ProJecT ]</h3>
         <ul>
             <li>[ 비트코인 자동매매 시스템 ]</li>
             <p><a href="#ProJecT">[ 비트코인 자동매매 시스템 진행상황 ]</a></p>
         </ul> 
 </div>
-<div id="TeaM" style="padding:128px 1px">
+<div id="TeaM" class="center" style="padding:128px 1px">
   <h3>[ Team ]</h3>
   <div style="margin: top 24px">
     <div>
@@ -114,11 +113,11 @@
       </div>
   </div>
 </div>
-<div id="ProJecT">
+<div id="ProJecT" class="center">
   <h3>[ 비트코인 자동매매 시스템 ]</h3>
   <button> 진행 상황 </button>
 </div>
-<div id="ScheDuleR">
+<div id="ScheDuleR" class="center">
   <div>
     <h3>[ ScheDuleR ]</h3>
     <table border="1">
@@ -187,7 +186,7 @@
     </table>
   </div>
 </div>
-<div style="padding:128px 1px" id="StudY">
+<div class="center" id="StudY">
   <h3>StudY</h3> 
   <table border="1">
     <tr>
@@ -204,9 +203,9 @@
                 <li>수 오전 10:25~11:50</li>
             </ul>
         </th>
-        <td>
+        <th>
             java를 이용해서 프로그래밍 개념 익히기
-        </td>
+        </th>
     </tr>
 
     <tr>
@@ -230,7 +229,7 @@
             </ul>
         </th>
         <th>
-            웹페이지를 만들기 위한 HTML, CSS, JavaScript 학습
+            웹페이지를 통한 인터페이스 실습
         </th>
     </tr>
     <tr>
@@ -289,10 +288,9 @@
     </tr>
 </table>
 </div>
-  </div>
-</div>
 <footer>
-  <a href="#home"></i>To the top</a>
+  <a href="#home" class="nav-link"></i>To the top</a>
 </footer>
 </body>
 </html>
+ 
